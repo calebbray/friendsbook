@@ -1,0 +1,23 @@
+{
+  "id": "11427313",
+  "name": "Caleb",
+  "email": "cjbray23@gmail.com",
+  "password": "password",
+  "friends": [
+    {
+      "id": "11427314",
+      "name": "Whitney"
+    },
+    {
+      "id": "11427315",
+      "name": "Trey"
+    }
+  ],
+  "post": [
+    {
+      "post_id": "123",
+      "post_title": "Sample Post",
+      "post_body": "This is the post"
+    }
+  ]
+}
