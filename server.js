@@ -6,9 +6,16 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const users = require('./routes/users');
+
 app.get('/', (req, res) => {
   res.send('hello');
 });
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use('/api/users', users);
 
 app.listen(config.PORT, () => {
   mongoose.set('useFindAndModify', false);
